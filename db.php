@@ -111,6 +111,9 @@ class db {
 		return $this->rows;
 	}
 
+	/**
+	* 返回查询条数
+	*/
 	public function num_rows($result) {
 		$this->result = mysqli_num_rows($result);
 		return $this->result;
